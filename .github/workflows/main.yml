@@ -33,3 +33,11 @@ jobs:
       with:
        name: Package
        path: ./my-app
+       
+    - uses: azure/docker-login@v1
+      
+    - run: |
+       docker build ./my-app/Dockerfile -t:${{ github.sha }}
+       
+       
+       
