@@ -1,3 +1,3 @@
 FROM maven
 WORKDIR /app
-copy ./harshit.jar /app
+copy ./my-app/target/my-app-1.0-SNAPSHOT.jar /app
