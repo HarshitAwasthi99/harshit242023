@@ -40,7 +40,7 @@ jobs:
        username: myregistry990
        password: mnbX213OaY5bTYPQazLqLjg5aT+CvFfIhufL9lYY+n+ACRBvU9sZ
     - run: |
-       docker build ./my-app -t myregistry990.azurecr.io/k8sdemo:${{ github.sha }}
+       docker build . -t myregistry990.azurecr.io/k8sdemo:${{ github.sha }}
        docker push myregistry990.azurecr.io/k8sdemo:${{ github.sha }}
        
        
