@@ -1,1 +1,3 @@
-FROM nginx:latest
+FROM maven
+WORKDIR /app
+copy ./harshit.jar /app
