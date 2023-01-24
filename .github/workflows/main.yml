@@ -19,8 +19,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
+    - run:  cd /my-app      
     - name: Build with Maven 
-    - run:  cd /my-app 
+    
       
     - run: mvn -B package --file .pom.xml
     - run: mkdir staging && cp target/*.jar staging
