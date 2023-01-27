@@ -30,7 +30,7 @@ jobs:
        password: mnbX213OaY5bTYPQazLqLjg5aT+CvFfIhufL9lYY+n+ACRBvU9sZ
     - run: |
        docker build ./my-app -t myregistry990.azurecr.io/k8sdemo:v1
-       docker push myregistry990.azurecr.io/k8sdemo:v1
+     
        
        
        
