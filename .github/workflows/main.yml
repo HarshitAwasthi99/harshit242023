@@ -21,8 +21,8 @@ jobs:
           
     - name: Build with Maven
       run: cd my-app
-    - run: mvn -B package --file ./my-app/pom.xml
-    - run: cd ./my-app && mkdir staging && cp target/*.jar staging
+    - run: mvn -B package --file pom.xml
+    - run: mkdir staging && cp target/*.jar staging
     - uses: azure/docker-login@v1
       with:
        login-server: myregistry990.azurecr.io
