@@ -31,15 +31,7 @@ jobs:
     - run: |
        docker build . -t myregistry990.azurecr.io/k8sdemo:v1
      
-    - uses: trstringer/manual-approval@v1
-      with:
-       secret: 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
-       approvers: harshit
-       minimum-approvals: 1
-       issue-title: "Deploying v1.3.5 to prod from staging"
-       issue-body: "Please approve or deny the deployment of version v1.3.5."
-       exclude-workflow-initiator-as-approver: true  
-     
+   
        
        
        
